@@ -5,6 +5,8 @@ const server = http.createServer(app);
 const cors = require('cors');
 const {newUser, Mensagem, crmSchema, mensagensSchema, listConversas} = require("./mongodb");
 const { default: mongoose } = require('mongoose');
+require('dotenv').config()
+
 
 const port = process.env.PORT || 8081;
 
