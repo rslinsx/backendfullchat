@@ -171,6 +171,11 @@ io.on('connection', socket => {
   app.get('/', (req, res)=>{
     res.send('Somente um teste');
   });
+
+  app.get("/teste", (req,res)=>{
+    res.send('Página testeeeeeeeeeeeeee!!!')
+  });
+  
   
  // carrega dados do perfil (primeiro nome, sobrenome e alterar senha por enquanto) na página perfil no front pegando do newUser /n
  // porque é um documento único com todos os users
